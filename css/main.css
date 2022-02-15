@@ -1,0 +1,288 @@
+/* start global rulse */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  * {
+    text-align: center;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 30%;
+}
+
+p {
+  padding: 22px 0;
+  color: hsl(208, 11%, 55%);
+}
+
+h3,
+h2,
+h4 {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 33px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* small screen size */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium screen size */
+
+@media (min-width: 929px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screen size */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end global rulse */
+
+/* start landing */
+
+.landing {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(193, 100%, 96%);
+}
+
+@media (max-width: 991px) {
+  .landing {
+    background-image: url(../images/bg-hero-mobile.svg);
+  }
+}
+
+.landing .nav-bar {
+  padding: 22px 0;
+}
+
+.landing .nav-bar .logo img {
+  width: 100%;
+}
+
+.landing .nav-bar,
+.landing .holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+@media (max-width: 991px) {
+  .landing .nav-bar,
+  .landing .holder {
+    flex-wrap: wrap;
+  }
+}
+
+.landing .nav-bar {
+  flex-wrap: nowrap;
+}
+
+.landing .nav-bar button {
+  padding: 11px 55px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+@media (max-width: 767px) {
+  .landing .nav-bar button {
+    padding: 11px 22px;
+  }
+
+  .landing .nav-bar .logo img {
+    width: 100px;
+  }
+}
+
+.landing .holder img {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 22px;
+}
+
+.holder .text button {
+  background-color: hsl(322, 100%, 66%);
+  padding: 22px 77px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* end landing */
+
+/* start site content */
+.sec-one,
+.sec-two,
+.sec-three {
+  margin: 50px 0;
+}
+
+.sec-three {
+  margin-bottom: 150px;
+}
+.sec-one .container,
+.sec-two .container,
+.sec-three .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 11px;
+}
+
+@media (max-width: 991px) {
+  .sec-one .container,
+  .sec-two .container,
+  .sec-three .container {
+    flex-direction: column;
+  }
+
+  .sec-one .container img,
+  .sec-two .container img,
+  .sec-three .container img {
+    width: 260px;
+  }
+
+  .sec-one .container img,
+  .sec-three .container img {
+    order: 1;
+  }
+
+  .sec-one .container .text,
+  .sec-three .container .text {
+    order: 2;
+  }
+}
+
+/* end site content */
+
+/* start community*/
+
+.community {
+  position: relative;
+}
+
+.community .container {
+  border-radius: 11px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: fit-content;
+  padding: 50px;
+  position: absolute;
+  top: -99px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 70%;
+}
+
+.community .container h4 {
+  padding-bottom: 22px;
+}
+
+.community button {
+  background-color: hsl(322, 100%, 66%);
+  padding: 22px 77px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .community button {
+    background-color: hsl(322, 100%, 66%);
+    padding: 22px 33px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 6px;
+  }
+}
+
+/* end community*/
+
+/* strart footer */
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 150px 0 22px;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+@media (max-width: 991px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+
+.footer .container ul {
+  flex-basis: 30%;
+  font-weight: 400px;
+}
+
+.footer .container ul li {
+  padding-bottom: 11px;
+}
+
+.footer .container ul li img {
+  width: 22px;
+}
+
+.footer .container ul:last-of-type li {
+  display: inline;
+  padding: 10px;
+}
+
+/* end footer */
+
+.attribution {
+  background-color: black;
+  color: #fff;
+  padding: 11px;
+}
