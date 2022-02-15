@@ -245,10 +245,6 @@ button {
   padding: 150px 0 22px;
 }
 
-.footer p {
-  color: #fff;
-}
-
 .footer .container {
   display: flex;
   align-items: center;
@@ -277,6 +273,11 @@ button {
 .footer .container ul:last-of-type li {
   display: inline;
   padding: 10px;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
 }
 
 /* end footer */
