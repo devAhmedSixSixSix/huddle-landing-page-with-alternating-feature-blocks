@@ -198,7 +198,6 @@ button {
 
 .community {
   position: relative;
-  text-align: center;
 }
 
 .community .container {
@@ -212,6 +211,8 @@ button {
   transform: translateX(-50%);
   background-color: #fff;
   width: 70%;
+  text-align: center;
+
 }
 
 .community .container h4 {
