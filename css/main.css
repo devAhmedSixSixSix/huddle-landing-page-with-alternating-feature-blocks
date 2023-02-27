@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @media (max-width: 991px) {
   * {
     text-align: center;
@@ -41,6 +45,11 @@ button {
   border: none;
   outline: none;
   border-radius: 33px;
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 .container {
@@ -72,6 +81,45 @@ button {
 
 /* end global rulse */
 
+/* start Animation */
+.fade-in {
+  opacity: 0;
+  transition: 350ms ease-in;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.from-left,
+.from-right {
+  opacity: 0;
+  transition: 400ms ease-in;
+}
+
+.from-left {
+  transform: translateX(-100px);
+}
+
+.from-right {
+  transform: translateX(100px);
+}
+
+.from-left.show,
+.from-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav-scroll {
+  background: #F6FBFF;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 11px;
+  transition: 500ms ease-in-out;
+  z-index: 9999;
+}
+
+/* end Animation */
+
 /* start landing */
 
 .landing {
@@ -88,7 +136,9 @@ button {
 }
 
 .landing .nav-bar {
-  padding: 22px 0;
+  padding: 22px;
+  position: fixed;
+  width: 100%;
 }
 
 .landing .nav-bar .logo img {
@@ -101,6 +151,10 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+}
+
+.landing .holder{
+  padding-top: 88px;
 }
 
 @media (max-width: 991px) {
@@ -212,7 +266,6 @@ button {
   background-color: #fff;
   width: 70%;
   text-align: center;
-
 }
 
 .community .container h4 {
@@ -283,3 +336,9 @@ button {
 }
 
 /* end footer */
+
+.attribution {
+  background-color: black;
+  color: #fff;
+  padding: 11px;
+}
